@@ -28,7 +28,7 @@ export default class App extends Component {
       />
        
         <Routes>
-          <Route path="/" exact element={<Home/>} />
+          <Route exact path="/"  element={<Home/>} />
           <Route
             path="/sports"
             exact
@@ -36,9 +36,9 @@ export default class App extends Component {
               <News setProgress= {this.setProgress}   key="sports" pageSize={6} country="in" category="Sports" />
             }
           />
-          <Route
+          <Route exact
             path="/business"
-            exact
+            
             element={
               <News setProgress= {this.setProgress}  
                 key="business"
@@ -48,9 +48,9 @@ export default class App extends Component {
               />
             }
           />
-          <Route
+          <Route exact
             path="/entertainment"
-            exact
+            
             element={
               <News setProgress= {this.setProgress} 
                 key="entertainment"
@@ -60,9 +60,9 @@ export default class App extends Component {
               />
             }
           />
-          <Route
+          <Route exact
             path="/general"
-            exact
+            
             element={
               <News setProgress= {this.setProgress}  
                 key="general"
@@ -72,16 +72,16 @@ export default class App extends Component {
               />
             }
           />
-          <Route
+          <Route exact
             path="/health"
-            exact
+          
             element={
               <News setProgress= {this.setProgress}  key="health" pageSize={6} country="in" category="Health" />
             }
           />
-          <Route
+          <Route exact
             path="/science"
-            exact
+            
             element={
               <News setProgress= {this.setProgress}  
                 key="science"
@@ -91,9 +91,9 @@ export default class App extends Component {
               />
             }
           />
-          <Route
+          <Route exact
             path="/technology"
-            exact
+            
             element={
               <News setProgress= {this.setProgress}  
                 key="technology"
